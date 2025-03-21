@@ -1,7 +1,16 @@
 #include <R.h>
 #include <Rinternals.h>
 #include <set>
+
+#undef length
+
+#include <set>
+#include <vector>
+#include <functional>
+
 using namespace std;
+
+// Undefine the 'length' macro to prevent conflicts
 
 /* -- points_witin from the spp package
 # determines a set of points within a set of fragments
